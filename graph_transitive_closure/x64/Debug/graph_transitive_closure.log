@@ -1,0 +1,21 @@
+﻿生成启动时间为 2016/9/28 星期三 下午 16:54:21。
+     1>项目“E:\传递闭包项目\graph_transitive_closure\graph_transitive_closure\graph_transitive_closure.vcxproj”在节点 2 上(Build 个目标)。
+     1>ClCompile:
+         D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /Zi /nologo /W3 /WX- /Od /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"x64\Debug\\" /Fd"x64\Debug\vc120.pdb" /Gd /TP /errorReport:prompt main.cpp
+         main.cpp
+     1>main.cpp(257): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(211) : 参见“fopen”的声明
+     1>main.cpp(270): warning C4996: 'strtok': This function or variable may be unsafe. Consider using strtok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\string.h(204) : 参见“strtok”的声明
+     1>main.cpp(272): warning C4996: 'strtok': This function or variable may be unsafe. Consider using strtok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\string.h(204) : 参见“strtok”的声明
+       Link:
+         D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"E:\传递闭包项目\graph_transitive_closure\x64\Debug\graph_transitive_closure.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"E:\传递闭包项目\graph_transitive_closure\x64\Debug\graph_transitive_closure.pdb" /SUBSYSTEM:CONSOLE /STACK:"10000000" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:\传递闭包项目\graph_transitive_closure\x64\Debug\graph_transitive_closure.lib" /MACHINE:X64 x64\Debug\graph.obj
+         x64\Debug\idList.obj
+         x64\Debug\main.obj
+         graph_transitive_closure.vcxproj -> E:\传递闭包项目\graph_transitive_closure\x64\Debug\graph_transitive_closure.exe
+     1>已完成生成项目“E:\传递闭包项目\graph_transitive_closure\graph_transitive_closure\graph_transitive_closure.vcxproj”(Build 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:02.96
