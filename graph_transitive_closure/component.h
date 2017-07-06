@@ -12,7 +12,7 @@ typedef struct comp {
 	comp_node* first_vertex;
 }comp;
 
-typedef comp comp_list[MAX_VERTEX_NUM];
+typedef comp comp_list[VERTEX_NUM];
 
 typedef struct {
 	int top;

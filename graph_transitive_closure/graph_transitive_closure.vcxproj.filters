@@ -15,16 +15,28 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="graph.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
     <ClInclude Include="component.h">
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="stack.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="btree.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="mmap.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="graph.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
     <ClInclude Include="idList.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
@@ -36,6 +48,9 @@
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="idList.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="mmap.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

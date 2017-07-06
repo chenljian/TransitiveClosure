@@ -2,7 +2,7 @@
 #define _STACK_H
 
 typedef struct {
-	int elem[MAX_VERTEX_NUM];
+	int elem[VERTEX_NUM];
 	int top;
 }stack;
 

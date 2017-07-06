@@ -1,7 +1,7 @@
 #ifndef _GRAPH_H
 #define _GRAPH_H
 
-#define MAX_VERTEX_NUM 50000
+#define VERTEX_NUM 5000
 
 typedef struct edge {
 	int vertex;
@@ -15,7 +15,7 @@ typedef struct {
 	int out_degree;
 }vertex_node;
 
-typedef vertex_node vertex_list[MAX_VERTEX_NUM];
+typedef vertex_node vertex_list[VERTEX_NUM];
 
 typedef struct {
 	vertex_list vertices;
@@ -36,15 +36,18 @@ typedef struct{
 	com_edge* first_com_edge;
 	int in_degree;	//»Î∂»
 	int out_degree;	
+	
 }com_vertex_node;
 
 
-typedef com_vertex_node com_vertex_list[MAX_VERTEX_NUM];
+typedef com_vertex_node com_vertex_list[VERTEX_NUM];
 
 typedef struct{
 	com_vertex_list com_vertexs;
 	int com_vertex_num;
 	int edge_num;
+	int path_num;
+	int component_num;
 }com_graph;
 
 
@@ -59,7 +62,7 @@ void partial_reset();
 bool exist(int vid, int w);
 void display();
 int count();
-int compress_graph(int);
+
 int calculate_com_graph_closesure(int);
 int reset_for_closesure();
 int output_closesure(int);

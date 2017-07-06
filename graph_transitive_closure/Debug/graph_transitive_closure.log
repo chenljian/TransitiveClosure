@@ -1,22 +1,48 @@
-﻿生成启动时间为 2016/12/2 8:52:22。
-     1>项目“C:\Users\Chen\Desktop\closure\graph_transitive_closure\graph_transitive_closure.vcxproj”在节点 2 上(Build 个目标)。
-       项目文件包含 ToolsVersion="14.0"。此工具集可能未知或缺失(您可以通过安装相应版本的 MSBuild 来解决该问题)，或者该生成因策略原因已被强制更改为特殊 ToolsVersion。将此项目视作具有 ToolsVersion="4.0"。有关更多信息，请参见 http://go.microsoft.com/fwlink/?LinkId=291333。
+﻿生成启动时间为 2017/7/5 15:16:02。
+     1>项目“F:\transitiveClosure\graph_transitive_closure\graph_transitive_closure.vcxproj”在节点 2 上(Build 个目标)。
      1>ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt main.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt main.cpp
          main.cpp
-     1>c:\users\chen\desktop\closure\graph_transitive_closure\main.cpp(389): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\stdio.h(218) : 参见“fopen”的声明
-     1>c:\users\chen\desktop\closure\graph_transitive_closure\main.cpp(404): warning C4996: 'strtok': This function or variable may be unsafe. Consider using strtok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\string.h(200) : 参见“strtok”的声明
-     1>c:\users\chen\desktop\closure\graph_transitive_closure\main.cpp(406): warning C4996: 'strtok': This function or variable may be unsafe. Consider using strtok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\string.h(200) : 参见“strtok”的声明
+     1>f:\transitiveclosure\graph_transitive_closure\main.cpp(109): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\string.h(112) : 参见“strcpy”的声明
+     1>f:\transitiveclosure\graph_transitive_closure\main.cpp(110): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\string.h(118) : 参见“strcat”的声明
+     1>f:\transitiveclosure\graph_transitive_closure\main.cpp(111): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\string.h(118) : 参见“strcat”的声明
+     1>f:\transitiveclosure\graph_transitive_closure\main.cpp(112): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\string.h(118) : 参见“strcat”的声明
+     1>f:\transitiveclosure\graph_transitive_closure\main.cpp(113): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\string.h(118) : 参见“strcat”的声明
+     1>f:\transitiveclosure\graph_transitive_closure\main.cpp(114): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\string.h(118) : 参见“strcat”的声明
+     1>f:\transitiveclosure\graph_transitive_closure\main.cpp(115): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\string.h(118) : 参见“strcat”的声明
+     1>f:\transitiveclosure\graph_transitive_closure\main.cpp(119): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\stdio.h(211) : 参见“fopen”的声明
+     1>f:\transitiveclosure\graph_transitive_closure\main.cpp(264): warning C4101: “i”: 未引用的局部变量
+     1>f:\transitiveclosure\graph_transitive_closure\main.cpp(434): warning C4244: “参数”: 从“time_t”转换到“unsigned int”，可能丢失数据
+     1>f:\transitiveclosure\graph_transitive_closure\main.cpp(485): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\stdio.h(211) : 参见“fopen”的声明
+     1>f:\transitiveclosure\graph_transitive_closure\main.cpp(505): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\stdio.h(304) : 参见“sscanf”的声明
+     1>f:\transitiveclosure\graph_transitive_closure\main.cpp(486): warning C4101: “str”: 未引用的局部变量
+     1>f:\transitiveclosure\graph_transitive_closure\main.cpp(483): warning C4101: “j”: 未引用的局部变量
+     1>f:\transitiveclosure\graph_transitive_closure\main.cpp(1012): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\stdio.h(211) : 参见“fopen”的声明
+     1>f:\transitiveclosure\graph_transitive_closure\main.cpp(1027): warning C4996: 'strtok': This function or variable may be unsafe. Consider using strtok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\string.h(204) : 参见“strtok”的声明
+     1>f:\transitiveclosure\graph_transitive_closure\main.cpp(1029): warning C4996: 'strtok': This function or variable may be unsafe. Consider using strtok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\string.h(204) : 参见“strtok”的声明
+     1>f:\transitiveclosure\graph_transitive_closure\main.cpp(101): warning C4715: “str_cmp”: 不是所有的控件路径都返回值
+     1>f:\transitiveclosure\graph_transitive_closure\main.cpp(478): warning C4715: “Search_block”: 不是所有的控件路径都返回值
        Link:
-         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Chen\Desktop\closure\graph_transitive_closure\Debug\graph_transitive_closure.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\Chen\Desktop\closure\graph_transitive_closure\Debug\graph_transitive_closure.pdb" /SUBSYSTEM:CONSOLE /STACK:"10000000","10000000" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Chen\Desktop\closure\graph_transitive_closure\Debug\graph_transitive_closure.lib" /MACHINE:X86 Debug\graph.obj
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"F:\transitiveClosure\graph_transitive_closure\Debug\graph_transitive_closure.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"F:\transitiveClosure\graph_transitive_closure\Debug\graph_transitive_closure.pdb" /SUBSYSTEM:CONSOLE /STACK:"16000000" /LARGEADDRESSAWARE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"F:\transitiveClosure\graph_transitive_closure\Debug\graph_transitive_closure.lib" /MACHINE:X86 Debug\graph.obj
          Debug\idList.obj
          Debug\main.obj
-         graph_transitive_closure.vcxproj -> C:\Users\Chen\Desktop\closure\graph_transitive_closure\Debug\graph_transitive_closure.exe
-     1>已完成生成项目“C:\Users\Chen\Desktop\closure\graph_transitive_closure\graph_transitive_closure.vcxproj”(Build 个目标)的操作。
+         Debug\mmap.obj
+         graph_transitive_closure.vcxproj -> F:\transitiveClosure\graph_transitive_closure\Debug\graph_transitive_closure.exe
+     1>已完成生成项目“F:\transitiveClosure\graph_transitive_closure\graph_transitive_closure.vcxproj”(Build 个目标)的操作。
 
 生成成功。
 
-已用时间 00:00:01.18
+已用时间 00:00:00.95

@@ -1,0 +1,31 @@
+﻿生成启动时间为 2017/5/31 21:25:11。
+     1>项目“E:\学习\大四下\mydemo\ConsoleApplication1\5_24\5_24.vcxproj”在节点 2 上(Build 个目标)。
+     1>ClCompile:
+         D:\visual studio 2013\VC\bin\CL.exe /c /Zi /nologo /W3 /WX- /sdl /O2 /Oi /Oy- /GL /D WIN32 /D NDEBUG /D _CONSOLE /D _LIB /D _CRT_SECURE_NO_DEPRECATE /D _UNICODE /D UNICODE /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Yu"stdafx.h" /Fp"Release\5_24.pch" /Fo"Release\\" /Fd"Release\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt 5_24.cpp
+         5_24.cpp
+     1>5_24.cpp(16): warning C4005: “_CRT_SECURE_NO_DEPRECATE”: 宏重定义
+                 命令行参数: 参见前面的“_CRT_SECURE_NO_DEPRECATE”定义
+     1>5_24.cpp(243): warning C4101: “i”: 未引用的局部变量
+     1>5_24.cpp(506): warning C4101: “w”: 未引用的局部变量
+     1>5_24.cpp(506): warning C4101: “v”: 未引用的局部变量
+     1>5_24.cpp(504): warning C4101: “buff”: 未引用的局部变量
+     1>5_24.cpp(580): warning C4244: “参数”: 从“time_t”转换到“unsigned int”，可能丢失数据
+     1>5_24.cpp(767): warning C4101: “v”: 未引用的局部变量
+     1>5_24.cpp(725): warning C4101: “t1”: 未引用的局部变量
+       Link:
+         D:\visual studio 2013\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"E:\学习\大四下\mydemo\ConsoleApplication1\Release\5_24.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"E:\学习\大四下\mydemo\ConsoleApplication1\Release\5_24.pdb" /SUBSYSTEM:CONSOLE /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:\学习\大四下\mydemo\ConsoleApplication1\Release\5_24.lib" /MACHINE:X86 /SAFESEH Release\5_24.obj
+         Release\mmap.obj
+         Release\stdafx.obj
+         正在生成代码
+     1>e:\学习\大四下\mydemo\consoleapplication1\5_24\mmap.cpp(52): warning C4715: “open_mmap”: 不是所有的控件路径都返回值
+     1>e:\学习\大四下\mydemo\consoleapplication1\5_24\5_24.cpp(488): warning C4715: “Search_block”: 不是所有的控件路径都返回值
+     1>e:\学习\大四下\mydemo\consoleapplication1\5_24\5_24.cpp(442): warning C4715: “popCS”: 不是所有的控件路径都返回值
+     1>e:\学习\大四下\mydemo\consoleapplication1\5_24\5_24.cpp(429): warning C4715: “popNS”: 不是所有的控件路径都返回值
+     1>e:\学习\大四下\mydemo\consoleapplication1\5_24\5_24.cpp(80): warning C4715: “str_cmp”: 不是所有的控件路径都返回值
+         已完成代码的生成
+         5_24.vcxproj -> E:\学习\大四下\mydemo\ConsoleApplication1\Release\5_24.exe
+     1>已完成生成项目“E:\学习\大四下\mydemo\ConsoleApplication1\5_24\5_24.vcxproj”(Build 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:01.95

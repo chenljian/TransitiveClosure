@@ -3,10 +3,10 @@
 #include "stdafx.h"
 
 #include <math.h>
-#include<stdio.h>
-#include<stdlib.h>
-#include<time.h>
-#include<string.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+#include <string.h>
 #include "Graph.h"
 #define BUFFSIZE 1024
 
@@ -14,16 +14,17 @@ AdjGraph* g = (AdjGraph*)malloc(sizeof(AdjGraph));
 
 void graph(int vertexNum, int edgeNum);
 int index = 1;
-int hsvaed[MAXVERTEX];
+int hseaved[MAXVERTEX];
 int visited[MAXVERTEX];
 void init();
+void printSucc();
 
-int _tmain(int argc, _TCHAR* argv[])
+int main(int argc, _TCHAR* argv[])
 {
 	clock_t start, end;
 	init();
 	/*Graph.txt stores the edges in the format of <v,w>. v,w represent the vertex.*/
-	char* path = "C:\\Graph.txt";
+	char* path = "testmap.txt";
 	
 	printf("%s\n", "start creating graph.");
 	readFile(path); // graph g is created based on the edges from above file.
@@ -39,9 +40,11 @@ int _tmain(int argc, _TCHAR* argv[])
 	end = clock();
 
 	printf("seconds: %f\n", (double)(end - start)/ CLOCKS_PER_SEC);
-	
-	
 
+	printSucc();
+	
+	
+	system("pause");
 	return 0;
 }
 
@@ -50,9 +53,9 @@ void tc(int v){
 	DFN[v] = index;
 	index++;
 	visited[v] = 1;
-	Cw[v] = -1;
+	//Cw[v] = -1;	已经在init()里面初始化了
 	pushNS(v);
-	hsvaed[v] = heightCS();
+	hseaved[v] = heightCS();
 
 	EdgeNode* p = g->adjlist[v].firstedge;
 
@@ -66,46 +69,48 @@ void tc(int v){
 			if (DFN[root[v]] > DFN[root[w]])
 				root[v] = root[w];
 		}
-		else if (!isExistCS(Cw[w])) {
+		else if (!isExistCS(Cw[w], hseaved[v])) {	//这个地方遇到多路可达的可能会出问题，待测试
 			pushCS(Cw[w]);
 		}
-
 		p = p->next;
 	}
 
+	
 	if (root[v] == v) {
 		int id = c->num;
 		c->num++;
 		int w;
+		//构建强连通分量
 		do {
 			w = popNS();
 			Cw[w] = id;
 			EdgeNode* p = (EdgeNode*)malloc(sizeof(EdgeNode));
 			p->adjvertex = w;
-			p->next = NULL;
+			//p->next = NULL;
 			c->c[id].no = id+1;
 			p->next = c->c[id].firstedge;
 			c->c[id].firstedge = p;
 		} while (w != v);
 
-		while (heightCS() != hsvaed[v]) {
+
+		while (heightCS() != hseaved[v]) {
 			int x = popCS();
 			EdgeNode* p = c->c[x].firstedge;
 
 			while (p) {
-				int v = p->adjvertex;
+				int x_v = p->adjvertex;
 
-				if (!isExistSucc(v, id)) {
+				if (!isExistSucc(x_v, id)) {
 					EdgeNode* q = (EdgeNode*)malloc(sizeof(EdgeNode));
-					q->adjvertex = v;
+					q->adjvertex = x_v;
 					q->next = c->c[id].firstedge;
 					c->c[id].firstedge = q;
 				}
 				p = p->next;
-			}
+			}//while(p)
+		}//while (heightCS() != hsvaed[v])
 
-		}
-	}
+	}//if
 
 }
 
@@ -126,13 +131,21 @@ void readFile(char* pathStr){
 	FILE* file = NULL;
 	file = fopen(pathStr, "r");
 
+	if (file == NULL)
+	{
+		printf("无法找到文件\n");
+		system("pause");
+		exit(0);
+	}
 	char buff[BUFFSIZE];
 	char* token = NULL;
 	int v, w;
-	g->n = 100000;
+	g->n = MAXVERTEX;
 	g->e = 0;
-	while (fgets(buff, BUFFSIZE, file)) {
-		
+
+	//读取文件中的图
+	while (fgets(buff, BUFFSIZE, file)) 
+	{	
 		token = strtok(buff, "<,>");
 		v = atoi(token);
 		token = strtok(NULL, "<,>");
@@ -204,19 +217,38 @@ void init() {
 		g->e = 0;
 	}
 
+	//栈顶初始化为-1
 	ns.top = -1;
 	cs.top = -1;
 	
+	//分量，高度，访问标记初始化
 	for (int i = 0; i < MAXVERTEX; i++) {
 		Cw[i] = -1;
-		hsvaed[i] = -1;
+		hseaved[i] = -1;
 		visited[i] = 0;
 	}
 
+	//强连通分量初始化
 	c->num = 0;
-
 	for (int i = 0; i < MAXVERTEX; i++) {
 		c->c[i].no = i;
 		c->c[i].firstedge = NULL;
+	}
+}
+
+void printSucc()
+{
+	for (int i = 0; i < MAXVERTEX; i++)
+	{
+		printf("%d succ: ", i);
+		int id = Cw[i];
+		EdgeNode*  p = c->c[id].firstedge;
+
+		while (p)
+		{
+			printf("%d ", p->adjvertex);
+			p = p->next;
+		}
+		printf("\n");
 	}
 }

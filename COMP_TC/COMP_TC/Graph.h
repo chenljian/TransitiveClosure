@@ -3,7 +3,7 @@
 #define _Graph_h_
 
 
-#define MAXVERTEX 1000000
+#define MAXVERTEX 4
 
 typedef struct node
 {
@@ -23,7 +23,8 @@ typedef VertexNode AdjList[MAXVERTEX];
 typedef struct
 {
 	AdjList adjlist;
-	int n, e;
+	int n;	//图的顶点个数
+	int e;	//图的边数
 }AdjGraph;
 
 typedef struct
@@ -90,11 +91,11 @@ int heightCS() {
 	return cs.top;
 }
 
-bool isExistCS(int elem) {
+bool isExistCS(int elem, int height){
 	if (cs.top < 0)
 		return false;
 	int index = cs.top;
-	while (index > 0) {
+	while (index > height) {	
 		if (cs.cs[index] == elem)
 			return true;
 		index--;

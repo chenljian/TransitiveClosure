@@ -9,7 +9,7 @@ graph* create_graph(int verNum, int edgeNum) {
 	g->vertex_num = verNum;
 	g->edge_num = edgeNum;
 
-	for (int i = 0; i < MAX_VERTEX_NUM; i++) {
+	for (int i = 0; i < VERTEX_NUM; i++) {
 		g->vertices[i].vertex = i;
 		g->vertices[i].first_edge = NULL;
 	}

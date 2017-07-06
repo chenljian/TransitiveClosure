@@ -3,7 +3,7 @@
 #include "graph.h"
 
 typedef struct {
-	int id[MAX_VERTEX_NUM];
+	int id[VERTEX_NUM];
 	int num;
 
 }idList;

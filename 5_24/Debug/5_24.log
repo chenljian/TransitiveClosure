@@ -1,0 +1,28 @@
+﻿生成启动时间为 2017/6/19 13:46:15。
+     1>项目“F:\transitiveClosure\5_24\5_24.vcxproj”在节点 2 上(Build 个目标)。
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _CRT_SECURE_NO_DEPRECATE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"stdafx.h" /Fp"Debug\5_24.pch" /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt 5_24.cpp
+         5_24.cpp
+     1>f:\transitiveclosure\5_24\5_24.cpp(16): warning C4005: “_CRT_SECURE_NO_DEPRECATE”: 宏重定义
+                 命令行参数: 参见前面的“_CRT_SECURE_NO_DEPRECATE”定义
+     1>f:\transitiveclosure\5_24\5_24.cpp(243): warning C4101: “i”: 未引用的局部变量
+     1>f:\transitiveclosure\5_24\5_24.cpp(506): warning C4101: “w”: 未引用的局部变量
+     1>f:\transitiveclosure\5_24\5_24.cpp(506): warning C4101: “v”: 未引用的局部变量
+     1>f:\transitiveclosure\5_24\5_24.cpp(504): warning C4101: “buff”: 未引用的局部变量
+     1>f:\transitiveclosure\5_24\5_24.cpp(580): warning C4244: “参数”: 从“time_t”转换到“unsigned int”，可能丢失数据
+     1>f:\transitiveclosure\5_24\5_24.cpp(767): warning C4101: “v”: 未引用的局部变量
+     1>f:\transitiveclosure\5_24\5_24.cpp(725): warning C4101: “t1”: 未引用的局部变量
+     1>f:\transitiveclosure\5_24\5_24.cpp(80): warning C4715: “str_cmp”: 不是所有的控件路径都返回值
+     1>f:\transitiveclosure\5_24\5_24.cpp(429): warning C4715: “popNS”: 不是所有的控件路径都返回值
+     1>f:\transitiveclosure\5_24\5_24.cpp(442): warning C4715: “popCS”: 不是所有的控件路径都返回值
+     1>f:\transitiveclosure\5_24\5_24.cpp(488): warning C4715: “Search_block”: 不是所有的控件路径都返回值
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"F:\transitiveClosure\5_24\Debug\5_24.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"F:\transitiveClosure\5_24\Debug\5_24.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"F:\transitiveClosure\5_24\Debug\5_24.lib" /MACHINE:X86 Debug\5_24.obj
+         Debug\mmap.obj
+         Debug\stdafx.obj
+         5_24.vcxproj -> F:\transitiveClosure\5_24\Debug\5_24.exe
+     1>已完成生成项目“F:\transitiveClosure\5_24\5_24.vcxproj”(Build 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:01.09
